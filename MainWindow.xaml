@@ -40,15 +40,15 @@
                 <Label x:Name="lblTotal" Content="Total" Canvas.Left="371" Canvas.Top="118" FontWeight="Bold"/>
                 <TextBox x:Name="txtTotal" Canvas.Left="414" Canvas.Top="119"
                     TextWrapping="Wrap" Width="95" Height="23" IsReadOnly="True" Text="0"/>
-                <Button x:Name="btnAddToSale" Content="Add To Sale" Canvas.Left="565" Canvas.Top="47" Click="Button_Click" Height="26" Width="96" FontWeight="Normal"/>
-                <Button x:Name="btnRemoveItem" Content="Remove Item" Canvas.Left="565" Canvas.Top="80" Click="Button_Click" Height="26" Width="96" FontWeight="Normal"/>
-                <Button x:Name="btnCheckOut" Content="Checkout" Canvas.Left="565" Canvas.Top="119" Click="Button_Click" Height="26" Width="96" FontWeight="Bold"/>
+                <Button x:Name="btnAddToSale" Content="Add To Sale" Canvas.Left="565" Canvas.Top="47" Height="26" Width="96" FontWeight="Normal"/>
+                <Button x:Name="btnRemoveItem" Content="Remove Item" Canvas.Left="565" Canvas.Top="80" Height="26" Width="96" FontWeight="Normal"/>
+                <Button x:Name="btnCheckOut" Content="Checkout" Canvas.Left="565" Canvas.Top="119" Height="26" Width="96" FontWeight="Bold"/>
             </Canvas>
         </GroupBox>
 
         <Menu x:Name="mnuMain" HorizontalAlignment="Left" Height="21" VerticalAlignment="Top" Width="131" Margin="0,26,0,0">
             <MenuItem Header="File">
-                <MenuItem x:Name="exitToolStripMenuItem" Header="Exit"  />
+                <MenuItem x:Name="exitToolStripMenuItem" Header="Exit" Click="exitToolStripMenuItem_Click"  />
             </MenuItem>
             <MenuItem Header="_Doughnuts">
                 <MenuItem Header="Make">

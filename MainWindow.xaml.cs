@@ -78,11 +78,6 @@ namespace Moisi_Olivia_Debora_Lab2
             myDoughnutMachine.Enabled = false;
         }
 
-        private void exitToolStripMenuItem_Click(object sender, RoutedEventArgs e)
-        {
-            this.Close();
-        }
-
         private void txtQuantity_KeyUp(object sender, KeyEventArgs e)
         {
             if(!(e.Key>=Key.D0 && e.Key<=Key.D9))
@@ -90,6 +85,11 @@ namespace Moisi_Olivia_Debora_Lab2
                 MessageBox.Show("Numai cifre se pot introduce!", "Input Error",
                     MessageBoxButton.OK, MessageBoxImage.Error);
             }
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }
